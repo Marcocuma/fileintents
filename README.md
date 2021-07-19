@@ -23,10 +23,10 @@ npx cap sync
 ### checkIntentReceived()
 
 ```typescript
-checkIntentReceived() => any
+checkIntentReceived() => Promise<{ data: string; }>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;{ data: string; }&gt;</code>
 
 --------------------
 

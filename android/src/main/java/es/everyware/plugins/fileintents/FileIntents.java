@@ -33,7 +33,7 @@ public class FileIntents extends Plugin {
 
         Intent intent = bridge.getActivity().getIntent();
         System.out.println(intent);
-        if (intent != null) {
+        if (intent != null && intent.getData() != null) {
             JSObject ret = new JSObject();
 
             try {
