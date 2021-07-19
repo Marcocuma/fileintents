@@ -15,6 +15,10 @@ public class FileIntents: CAPPlugin {
             let fm = FileManager.default
             
             do {
+                if(fm.fileExists(atPath: destinationPath)){
+                   try fm.removeItem(atPath: destinationPath)
+                }
+
                 try FileManager.default.copyItem(atPath: store.url, toPath: destinationPath)
                 call.success(["data": name])
             } catch (let error) {
