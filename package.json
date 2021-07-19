@@ -1,6 +1,6 @@
 {
   "name": "fileintents",
-  "version": "0.0.2",
+  "version": "0.1.55",
   "description": "a",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
